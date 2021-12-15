@@ -19,7 +19,7 @@ jobs:
           deno-version: v1.x
 
       - name: Minify files
-        run: deno run --allow-read --allow-write --unstable --quiet publish/mod.ts
+        run: deno run --allow-read --allow-write --unstable --quiet publish/main.ts
         working-directory: .
           
       - name: Deploy
