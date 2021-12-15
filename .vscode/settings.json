@@ -1,2 +1,10 @@
 {
+  // It seems deno settings are not available per workspace setting yet (when using multi workspaces)
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.config": "publish/deno.json",
+  "deno.importMap": "publish/import_map.json",
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": true
+  }
 }
